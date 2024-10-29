@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="mk.png" alt="Mahan">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><i class="fas fa-trophy"></i> Live Scores</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                <li><a href="#"><i class="fas fa-archive"></i> Archives</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="#"><i class="fas fa-flag"></i> Series</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Teams</a></li>
+                <li><a href="#"><i class="fas fa-video"></i> Videos</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Rankings</a></li>
+                <li><a href="#"><i class="fas fa-ellipsis-h"></i> More</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Live Scores Section -->
+        <section class="live-scores">
+            <div class="score-card" id="match1">
+                <h3><i class="fas fa-cricket"></i> 2nd Test - South Africa tour of Bangladesh</h3>
+                <p><strong id="score1">RSA 105-1</strong></p>
+                <p>Day 1: 1st Session</p>
+            </div>
+            <div class="score-card" id="match2">
+                <h3><i class="fas fa-cricket"></i> 3rd ODI - New Zealand Women tour of India</h3>
+                <p><strong id="score2">India Women vs New Zealand Women</strong></p>
+                <p>Today, 01:45 PM</p>
+            </div>
+            <div class="score-card" id="match3">
+                <h3><i class="fas fa-cricket"></i> 5th Match - Women's Big Bash League 2024-25</h3>
+                <p><strong id="score3">Sydney Sixers Women vs Adelaide Strikers Women</strong></p>
+                <p>Today, 12:55 PM</p>
+            </div>
+            <div class="score-card" id="match4">
+                <h3><i class="fas fa-cricket"></i> Elite Group A - Ranji Trophy Elite 2024-25</h3>
+                <p><strong id="score4">MUM 450 & 80-5</strong></p>
+                <p>Day 4: 1st Session - Mumbai lead by ...</p>
+            </div>
+        </section>
+
+        <!-- Quick Access Buttons -->
+        <section class="quick-access">
+            <button><i class="fas fa-file-alt"></i> See Plans</button>
+            <button><i class="fas fa-flag"></i> Team India</button>
+            <button><i class="fas fa-plus"></i> Premium Plus</button>
+        </section>
+
+        <!-- News and Videos Wrapper -->
+        <div class="content-wrapper">
+            <!-- Latest News Section -->
+            <section class="latest-news">
+                <h2><i class="fas fa-newspaper"></i> Latest News</h2>
+                <div class="news-item">
+                    <p>Williamson to miss Mumbai Test</p>
+                    <span><i class="fas fa-clock"></i> 3h ago</span>
+                </div>
+                <div class="news-item">
+                    <p>Matthew Wade retires from international cricket</p>
+                    <span><i class="fas fa-clock"></i> 4h ago</span>
+                </div>
+                <div class="news-item">
+                    <p>Mahidul Islam Ankon replaces Jaker Ali for Chittagong Test</p>
+                    <span><i class="fas fa-clock"></i> 18h ago</span>
+                </div>
+                <div class="news-item">
+                    <p>Taijul throws his hat in the ring for Test captaincy</p>
+                    <span><i class="fas fa-clock"></i> 21h ago</span>
+                </div>
+            </section>
+
+            <!-- Featured Videos Section -->
+            <section class="featured-videos">
+                <h2><i class="fas fa-video"></i> Featured Videos</h2>
+                <div class="video-item">
+                    <img src="virat.jpg" alt="Rishabh Pant's Run-out">
+                    <p>Rishabh Pant's run-out nothing but a schoolboy error: Manoj Tiwary</p>
+                </div>
+                <div class="video-item">
+                    <img src="virat1.avif" alt="Series Loss">
+                    <p>Series loss to New Zealand a bitter pill to swallow</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Mahan Khanal - All rights reserved</p>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

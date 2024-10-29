@@ -1,0 +1,263 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb, #90caf9, #64b5f6);
+    color: #333;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    padding: 10px 40px;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 45px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.navbar ul li a i {
+    margin-right: 8px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search i {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 8px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Live Scores Section */
+.live-scores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-card {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #0263A0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.score-card:hover {
+    transform: scale(1.03);
+}
+
+.score-card h3 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.score-card h3 i {
+    margin-right: 8px;
+    color: #0263A0;
+}
+
+.score-card p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Quick Access Buttons */
+.quick-access {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.quick-access button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #0263A0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.quick-access button:hover {
+    background-color: #024b7d;
+}
+
+.quick-access button i {
+    margin-right: 6px;
+}
+
+/* Main Content Wrapper */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+/* Latest News Section */
+.latest-news {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.latest-news h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #0263A0;
+    margin-bottom: 15px;
+}
+
+.latest-news h2 i {
+    margin-right: 10px;
+}
+
+.news-item {
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.news-item p {
+    font-weight: 600;
+}
+
+.news-item span {
+    color: #888;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.news-item span i {
+    margin-right: 4px;
+}
+
+/* Featured Videos Section */
+.featured-videos {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-videos h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #0263A0;
+    margin-bottom: 15px;
+}
+
+.featured-videos h2 i {
+    margin-right: 10px;
+}
+
+.video-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.video-item p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #0263A0;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+footer p {
+    margin: 0; /* Ensure no margin for the text inside the footer */
+}
+
+/* General Enhancements */
+.content-wrapper > section {
+    margin-bottom: 20px; /* Add space between sections in content-wrapper */
+}
